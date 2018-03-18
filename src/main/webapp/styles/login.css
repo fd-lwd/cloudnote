@@ -1,0 +1,239 @@
+﻿*{
+	padding:0;
+	margin:0;
+}
+body {
+	background: url("../images/UK.jpg");
+	overflow:hidden;
+	font-family:'微软雅黑';
+}
+.global{
+	width:1px;
+	height:1px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	background:red;
+}
+.log,.sig{
+	width:500px;
+	top:-14000%;
+	background:#eee;
+	position:absolute;
+	border-radius:10px;
+	overflow:hidden;
+	outline:0 none;
+	opacity: 0.8;
+	/*border:1px solid #fff;*/
+}
+/*--move in--*/
+.sig_in,.log_in{
+	left:-300000%;
+	animation:move_in 0.4s linear forwards;
+	-webkit-animation:move_in 0.4s linear forwards;
+	-moz-animation:move_in 0.4s linear forwards;
+	-o-animation:move_in 0.4s linear forwards;
+}
+@keyframes move_in{
+	frome{left:-300000%}
+	to{left:-25000%}
+}
+@-webkit-keyframes move_in{
+	frome{left:-300000%}
+	to{left:-25000%}
+}
+@-moz-keyframes move_in{
+	frome{left:-300000%}
+	to{left:-25000%}
+}
+@-o-keyframes move_in{
+	frome{left:-300000%}
+	to{left:-25000%}
+}
+/*--move in--*/
+/*--move out--*/
+.sig_out,.log_out{
+	left:-25000%;
+	animation:move_out 1.4s linear forwards;
+	-webkit-animation:move_out 1.4s linear forwards;
+	-moz-animation:move_out 1.4s linear forwards;
+	-o-animation:move_out 1.4s linear forwards;
+}
+@keyframes move_out{
+	frome{left:-25000%}
+	to{left:1000000%}
+}
+@-webkit-keyframes move_out{
+	frome{left:-25000%}
+	to{left:1000000%}
+}
+@-moz-keyframes move_out{
+	frome{left:-25000%}
+	to{left:1000000%}
+}
+@-o-keyframes move_out{
+	frome{left:-25000%}
+	to{left:1000000%}
+}
+/*--move out--*/
+.shart{
+	animation:pc 4s linear infinite alternate;
+	-webkit-animation:pc 4s linear infinite alternate;
+	-moz-animation:pc 4s linear infinite alternate;
+	-o-animation:pc 4s linear infinite alternate;
+}
+@keyframes pc{
+	frome{box-shadow:0 0 0 #fff;}
+	to{box-shadow:0 0 50px #fff;}
+}
+@-webkit-keyframes pc{
+	frome{box-shadow:0 0 0 #fff;}
+	to{box-shadow:0 0 50px #fff;}
+}
+@-moz-keyframes pc{
+	frome{box-shadow:0 0 0 #fff;}
+	to{box-shadow:0 0 50px #fff;}
+}
+@-o-keyframes pc{
+	frome{box-shadow:0 0 0 #fff;}
+	to{box-shadow:0 0 50px #fff;}
+}
+dt{
+	text-align: center;
+	margin-bottom:25px;
+}
+dt div{
+	text-align: center;
+}
+dt:last-child{
+	margin-bottom:0;
+}
+dl{
+	background: #fff;
+	padding-bottom: 20px;
+}
+.header{
+	height:55px;
+	color:#fff;
+	background:#6d7993;
+}
+h3{
+	text-align: left;
+	padding-left: 20px;
+	line-height:55px;
+	font-size:22px;
+	font-weight:400;
+}
+input[type=text],input[type=password]{
+	height:25px;
+	width:265px;
+	padding:0 5px;
+	margin-right: 10px;
+	/*float: left;*/
+	border-bottom:1px solid #96858f;
+	/*border-radius:3px;*/
+	letter-spacing:0.05em;
+}
+input[type=button]{
+	width:100px;
+	height:30px;
+	line-height: 30px;
+	margin-top: 7px;
+	background-color: #ffffff;
+	border:1px solid #6d7993;
+	border-radius:3px;
+	cursor:pointer;
+	font-size:16px;
+	color:#96858f;
+	/*margin-left:120px;*/
+	transition:all 0.4s;
+}
+input[type=button]:hover{
+	background:#6d7993;
+	color:#fff;
+	border: 1px solid #6d7993;
+}
+.sig_in input[type=text],.sig_in input[type=password]{
+	outline-style: none;
+	border: none;
+	border-bottom: 1px solid #96858f;
+}
+/*.sig_in .warning{*/
+	/*right: 70px;*/
+	/*top: -3px;*/
+/*}*/
+.letter,.password{
+	margin: 0 auto;
+	width: 80%;
+	height: 30px;
+	/*text-align: center;*/
+	color:#000;
+	/*text-indent:4em;*/
+	position:relative;
+}
+.letter p, .password p {
+	float: left;
+	text-align: right;
+	width: 80px;
+	margin: 2px 10px 0 0 ;
+}
+.password{
+	/*text-indent:2em;*/
+}
+#sig_in,#back{
+	margin-left:18px;
+}
+.sig_in .cpw_warning{
+	right: 70px;
+}
+.warning{
+	position:absolute;
+	text-indent:0;
+	height:32px;
+	line-height:32px;
+	right:22px;
+	top:-3px;
+	color:red;
+	font-size:14px;
+	display:none;
+}
+.warning span{
+	animation:emo .5s linear infinite alternate;
+	-webkit-animation:emo .5s linear infinite alternate;
+	-moz-animation:emo .5s linear infinite alternate;
+	-o-animation:emo .5s linear infinite alternate;
+}
+#count_span,#password_span{
+	position: absolute;
+	right: 22px;
+	top: 1px;
+	font-size: 14px;
+	color: red;
+}
+/*#warning_1,#warning_2,#warning_3{*/
+	/*right: 10px;*/
+	/*top: 0;*/
+/*}*/
+
+@keyframes emo{
+	from {opacity:0;}
+	to {opacity:1;}
+}
+@-webkit-keyframes emo{
+	from {opacity:0;}
+	to {opacity:1;}
+}
+@-moz-keyframes emo{
+	from {opacity:0;}
+	to {opacity:1;}
+}
+@-o-keyframes emo{
+	from {opacity:0;}
+	to {opacity:1;}
+}
+/*----*/
+.log_in{
+	z-index:1;
+	opacity: 0.8;
+}
+/*----*/
